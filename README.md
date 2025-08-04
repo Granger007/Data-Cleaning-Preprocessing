@@ -1,5 +1,3 @@
-Data Cleaning & Preprocessing for Machine Learning
-
 This project demonstrates a complete data cleaning and preprocessing pipeline using Python. The goal is to transform raw, messy data into a clean, structured format ready for machine learning tasks.
 
 🔧 Tools & Libraries Used:
