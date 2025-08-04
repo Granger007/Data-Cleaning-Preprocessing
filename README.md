@@ -1,50 +1,57 @@
 Data Cleaning & Preprocessing for Machine Learning
-      This project demonstrates a complete data cleaning and preprocessing pipeline using Python. The goal is to transform raw, messy data into a clean, structured format ready for machine learning tasks.
 
-Tools & Libraries Used:
+This project demonstrates a complete data cleaning and preprocessing pipeline using Python. The goal is to transform raw, messy data into a clean, structured format ready for machine learning tasks.
 
- => Python
+🔧 Tools & Libraries Used:
 
- => Pandas – Data manipulation
+Python
 
- => NumPy – Numerical operations
+Pandas – Data manipulation
 
- => Matplotlib / Seaborn – Data visualization
+NumPy – Numerical operations
 
- => Scikit-learn – Standardization, encoding
+Matplotlib / Seaborn – Data visualization
+
+Scikit-learn – Standardization, encoding
 
 📁 Workflow Overview
-1. Import Dataset
+
+✅ Import Dataset
+
 Load CSV data using pandas.read_csv()
 
-2. Basic Exploration
+✅ Basic Exploration
+
 Check shape, datatypes, and missing values
 
 Display basic statistics using .info(), .describe(), .isnull().sum()
 
-3. Handle Missing Values
+✅ Handle Missing Values
+
 Fill numerical columns with mean
 
 Fill categorical columns with mode
 
-No chained assignment (future-proof)
+Avoid chained assignment for future-proof compatibility
 
-4. Encode Categorical Variables
+✅ Encode Categorical Variables
+
 Label encode object-type features using LabelEncoder
 
 (Can switch to one-hot encoding for better generalization)
 
-5. Standardize Numerical Features
+✅ Standardize Numerical Features
+
 Normalize all numerical columns using StandardScaler
 
-6. Visualize Outliers
+✅ Visualize Outliers
+
 Use boxplots for each numerical feature
 
-Plot all at once or one-by-one based on count
+Plot all at once or one-by-one based on feature count
 
-7. Remove Outliers
-IQR method (Q1 - 1.5 * IQR, Q3 + 1.5 * IQR)
+✅ Remove Outliers
+
+Use IQR method: Q1 - 1.5 * IQR to Q3 + 1.5 * IQR
 
 Loop through numeric columns and filter out extreme values
-
-
